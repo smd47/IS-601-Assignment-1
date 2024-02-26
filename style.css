@@ -1,0 +1,397 @@
+html, body{
+  margin: 0;
+  padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a:visited {
+  color: white;
+}
+
+a:link{
+  color:Black; }
+
+
+
+
+
+
+/* NAVIGATION BAR SECTION */
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000000;
+    top: 0;
+  }
+
+    .navbar li {
+        float: left;
+    }
+
+    .navbar li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 10px 15px;
+        margin-left: 100px;
+        text-decoration: none; }
+     
+
+
+
+
+
+/* COVER IMAGE SECTION (PROFILE PIC, WELCOME WORDS, BUTTONS, ETC.) */
+.coverimage {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.coverimage img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.coverimage .myname {
+    position: absolute;
+    color: black;
+    font-size: 30px;
+    left: 25%;
+    top: 50%;  
+    transform: translate(-50%, -50%);
+    text-align: left;
+    line-height: 20px;
+}
+
+.myname h1{
+    font-size: 70px;
+}
+
+.myname img {
+    width: 100px;
+    height: 100px;
+}
+
+.Shanapic img {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    right: 15%;
+    top: 10%;  
+    transform: translate(30%, 0%);
+    border-radius: 50%;
+}
+
+.button1, .button2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: solid;
+    border-width: 1px;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    background-color: Black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: black;
+}
+
+button:hover {
+    background-color: #6e7075;
+    color: black; }
+
+
+
+
+
+
+/* ABOUT SECTION */
+
+.Aboutme {
+  position: relative;
+}
+
+.Aboutme h2 {
+    text-align: center;
+    color: black;
+    font-size: 50px;
+    margin-top: 50px;
+    line-height: 0px;
+  }
+
+div.Aboutme p {
+    background-color: #f1f1f1;
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+    width: 70%;
+    height: auto;
+    padding: 45px;
+    margin: 0 auto;
+    font-size: 16px;
+    box-shadow: 10px 10px black; }
+
+
+
+
+
+
+/* EDUCATION SECTION */
+
+.degree {
+  display: inline-block;
+  margin-left: 170px;
+  margin-right: 170px;
+  line-height: 8px;
+  width: 20%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  
+}
+
+.degree h2{
+  line-height: 5px;
+}
+
+.edu h2 {
+  font-size: 50px;
+  text-align: center; }
+
+
+
+
+
+
+
+
+/* EXPERIENCE SECTION (TIMELINE) */
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+  }
+  
+  /* Container around content */
+  .container {
+    padding: 2px 2px;
+    position: relative;
+    background-color: white;
+    width: 50%;
+  }
+  
+  /* The circles on the timeline */
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: -10px;
+    background-color: white;
+    border: 3px solid black;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .L {
+    left: 0;
+  }
+  
+  /* Place the container to the right */
+  .R {
+    left: 50%;
+  }
+
+  /* Fix the circle for containers on the right side */
+  .R::after {
+    left: -10px;
+  }
+  
+  /* The actual content */
+  .content {
+    padding: 10px 20px;
+    background-color: #dce3f3;
+    position: relative;
+    border-radius: 6px;
+  }
+  
+  /* Media queries - to apply different styles for different media types/devices */
+  @media screen and (max-width: 600px){
+    .timeline::after {
+    left: 31px;
+    }
+    
+    /* Full-width containers */
+    .container {
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 15px;
+    }
+    
+    /* Make sure that all arrows are pointing leftwards */
+    .container::before {
+    left: 60px;
+    border: medium solid black;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #afb0b2 transparent transparent;
+    }
+  
+    /* Make sure all circles are at the same spot */
+    .L::after, .R::after {
+    left: 15px;
+    }
+    
+    /* Make all right containers behave like the left ones */
+    .R {
+    left: 0%;
+    }
+  }
+
+  .content h2, h3, h5 {
+    line-height: 5px;
+  }
+
+  .content li{
+    font-size: 13px;
+  }
+
+  .exp h2 {
+    font-size: 50px;
+    text-align: center;
+  }
+
+
+
+
+
+
+
+/* SKILLS SECTION */
+  
+  #myskill {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .box {
+    width: 300px;
+    background-color: #ddd;
+  }
+  
+  .skills {
+    text-align: right;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+  }
+  
+  .html {width: 80%; background-color: #7F9BDB;}
+  .css {width: 75%; background-color: #7F9BDB;}
+  .sql {width: 60%; background-color: #7F9BDB;}
+  .ms {width: 90%; background-color: #7F9BDB;}
+  .dyn {width: 85%; background-color: #7F9BDB;}
+  .comm {width: 80%; background-color: #7F9BDB;}
+  .pro {width: 90%; background-color: #7F9BDB;}
+  .pm {width: 85%; background-color: #7F9BDB;}
+  .org {width: 90%; background-color: #7F9BDB;}
+  .risk {width: 80%; background-color: #7F9BDB;}
+
+  .ability {
+    display: inline-block;
+    padding-left: 200px;
+    padding-right: 200px;
+    text-align: center;
+    margin: 0 auto;
+
+  }
+  
+
+
+
+
+
+/* CERTIFICATION SECTION */
+  .image {
+    width: 120px;
+    height: 120px;
+    margin-left: 150px;
+    transition: height 1s;
+    transition: width 1s;
+    text-align: center;
+  }
+
+  .image:hover {
+    height: 150px;
+    width: 150px
+  }
+
+  .cert h2 {
+    font-size: 50px;
+    text-align: center;
+  }
+
+
+
+
+
+/* FOOTER SECTION */
+  .footer {
+    text-align: center;
+    display:block;
+    line-height: 2px;
+    border-radius: 5px;
+    background-color: #dce3f3;
+    padding: 20px;
+  }
+
+  
+input[type=text], select, textarea {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid rgb(161, 161, 161);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: white;
+  color: Black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 50%;
+  border: 1px solid rgb(161, 161, 161);
+}
+
+
+input[type=submit]:hover {
+  background-color: #e7e8eb;
+  width: 50%;
+  border: 1px solid rgb(161, 161, 161);
+}
