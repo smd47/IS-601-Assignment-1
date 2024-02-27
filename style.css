@@ -1,16 +1,16 @@
 html, body{
-  margin: 0;
-  padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
 }
 
 a:visited {
   color: white;
 }
 
-/* NAVIGATION BAR SECTION 
 a:link{
-  color:Black; } */
+  color:Black; }
 
 
 
@@ -20,11 +20,11 @@ a:link{
 /* NAVIGATION BAR SECTION */
 .navbar ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
     background-color: #000000;
     top: 0;
+    margin: 0px;
+    padding: 0px;
   }
 
     .navbar li {
@@ -104,26 +104,19 @@ a:link{
 
 button:hover {
     background-color: #6e7075;
-    color: white; 
-}
+    color: black; }
 
 
 
 
 
 
-/* ABOUT SECTION */
-
-.Aboutme {
-  position: relative;
-}
-
+/* ABOUT ME SECTION */
 .Aboutme h2 {
     text-align: center;
     color: black;
     font-size: 50px;
-    margin-top: 50px;
-    line-height: 0px;
+    margin-top: 30px;
   }
 
 div.Aboutme p {
@@ -131,7 +124,7 @@ div.Aboutme p {
     color: black;
     text-align: center;
     border-radius: 10px;
-    width: 70%;
+    width: 65%;
     height: auto;
     padding: 45px;
     margin: 0 auto;
@@ -144,31 +137,32 @@ div.Aboutme p {
 
 
 /* EDUCATION SECTION */
-
-.degree {
-  display: inline-block;
-  margin-left: 170px;
-  margin-right: 170px;
-  line-height: 8px;
-  width: 25%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  text-align: center;
-  border-radius: 10px;
-  padding: 10px;
-  
-}
-
-.degree h2{
+.degree h2 {
   line-height: 5px;
 }
 
 .edu h2 {
   font-size: 50px;
-  text-align: center; }
+  text-align: center;
+}
 
+.degree {
+  display: block;
+  /*margin-left: 150px;
+  margin-right: 150px;*/
+  line-height: 8px;
+  width: 40%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0 auto;
+  /* I was trying to center this while using display: inline-block, but it didn't work so i used block instead*/
+}
 
-
-
+.schooling{
+  text-align: center;
+}
 
 
 
@@ -178,7 +172,7 @@ div.Aboutme p {
   /* The actual timeline (the vertical ruler) */
   .timeline {
     position: relative;
-    max-width: 1000px;
+    max-width: 900px;
     margin: 0 auto;
   }
   
@@ -291,15 +285,15 @@ div.Aboutme p {
 
 
 /* SKILLS SECTION */
-  
   #myskill {
     font-size: 50px;
     text-align: center;
   }
 
   .box {
-    width: 300px;
+    width: 70%;
     background-color: #ddd;
+    border-radius: 10px;
   }
   
   .skills {
@@ -307,26 +301,22 @@ div.Aboutme p {
     padding-top: 5px;
     padding-bottom: 5px;
     color: white;
+    border-radius: 10px;
   }
   
-  .html {width: 80%; background-color: #7F9BDB;}
-  .css {width: 75%; background-color: #7F9BDB;}
-  .sql {width: 60%; background-color: #7F9BDB;}
+  .html {width: 55%; background-color: #7F9BDB;}
+  .css {width: 50%; background-color: #7F9BDB;}
+  .sql {width: 55%; background-color: #7F9BDB;}
   .ms {width: 90%; background-color: #7F9BDB;}
   .dyn {width: 85%; background-color: #7F9BDB;}
-  .comm {width: 80%; background-color: #7F9BDB;}
-  .pro {width: 90%; background-color: #7F9BDB;}
-  .pm {width: 85%; background-color: #7F9BDB;}
-  .org {width: 90%; background-color: #7F9BDB;}
+  .pm {width: 70%; background-color: #7F9BDB;}
   .risk {width: 80%; background-color: #7F9BDB;}
 
   .ability {
-    display: inline-block;
-    padding-left: 175px;
-    padding-right: 175px;
-    text-align: center;
-    margin: 0 auto;
-
+    display: block;
+    padding-left: 200px;
+    text-align: left;
+    width: 100%;
   }
   
 
@@ -338,10 +328,11 @@ div.Aboutme p {
   .image {
     width: 120px;
     height: 120px;
-    margin-left: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
     transition: height 1s;
     transition: width 1s;
-    text-align: center;
+    display: inline-block;
   }
 
   .image:hover {
@@ -354,14 +345,14 @@ div.Aboutme p {
     text-align: center;
   }
 
-
+  
 
 
 
 /* FOOTER SECTION */
   .footer {
     text-align: center;
-    display:block;
+    display: block;
     line-height: 2px;
     border-radius: 5px;
     background-color: #dce3f3;
@@ -390,7 +381,6 @@ input[type=submit] {
   width: 50%;
   border: 1px solid rgb(161, 161, 161);
 }
-
 
 input[type=submit]:hover {
   background-color: #e7e8eb;
