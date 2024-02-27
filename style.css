@@ -2,7 +2,7 @@ html, body{
   margin: 0px;
   padding: 0px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  overflow-x: hidden;
+  overflow-x: hidden; /* tried to remove white space, but didn't work*/
 }
 
 a:visited {
@@ -99,7 +99,7 @@ a:link{
     background-color: Black;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    color: black;
+    color: white;
 }
 
 button:hover {
